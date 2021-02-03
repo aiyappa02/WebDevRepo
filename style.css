@@ -1,0 +1,83 @@
+* {margin : 0; padding: 0; background-color: bisque; font-family: 'Yusei Magic', sans-serif;}
+
+ section{
+    height :150vh;
+    display :flex;
+    flex-direction: column;
+    justify-content : center; /* places it left right : center*/
+    align-items: center; /* places it up down center*/
+}
+
+section h1{
+    text-transform: capitalize ;
+    font-size: 2rem;
+    padding-bottom: 30px;
+    text-shadow: 2px 2px 1px white;
+
+    animation: zooms 1s linear infinite;
+    animation-direction: alternate;
+}
+
+p{
+    font-size: 40px;
+    width: 30px;
+    text-align: center;
+    background-color: rgb(87, 99, 206);
+    /* margin: 10px ; */
+
+}
+
+@keyframes zooms {
+    from{transform: translateX(-20px); }
+    to {transform: translateX(20px);}
+}
+
+.centerdiv{
+    height:400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content : center; 
+    align-items: center; 
+    background-color: rgb(87, 99, 206); 
+} 
+
+.insertBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    height : 100px;
+    background-color:rgb(87, 99, 206) ;
+}
+
+
+
+#v1, #v2{
+    text-align: center;
+    padding: 20px 30px; /*20 px for up and down 30 for left and right*/
+    width : 50px;
+    
+    font-size: 30px;
+    box-shadow: 1px 1px 0px #999,
+    2px 2px 0px #999,
+    3px 3px 0px #999,
+    4px 4px 0px #999,
+    5px 5px 0px #999,
+    6px 6px 0px #999;
+}
+
+.middleBox #answer {
+    /* margin: 30px 0; upddown, leftright */
+    padding:5px 0;
+    font-size: 30px;
+    text-align: center;
+    width: 200px;;
+}
+
+
+/* #equal{
+    padding: 0px;
+    background-color:rgb(87, 99, 206;
+    font-size : 30px ;
+} */
